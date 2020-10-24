@@ -23,6 +23,9 @@ Plug 'tpope/vim-fugitive' " Git plugin
 Plug 'tpope/vim-surround' " Surround plugin
 Plug 'tpope/vim-vinegar'
 Plug 'vim-scripts/a.vim'
+Plug 'majutsushi/tagbar'
+Plug 'junegunn/vim-easy-align'
+Plug 'vimwiki/vimwiki'
 " Initialize plugin system
 call plug#end()
 
@@ -50,7 +53,7 @@ let g:cpp_member_variable_highlight = 1
 syntax on
 " colorscheme gruvbox
 colorscheme PaperColor
-set background=light
+set background=dark
 
 "********************************
 "****          A C K         ****
@@ -61,3 +64,25 @@ endif
 if executable('rg')
 	let g:ackprg = 'rg --vimgrep --no-heading'
 endif
+
+"********************************
+"****    V I M    W I K I    ****
+"********************************
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+
+"********************************
+"****         F Z F          ****
+"********************************
+noremap <Left> :Bu<CR>
+noremap <Right> :FZF -i<CR>
+
+"********************************
+"****  E A S Y   A L I G N   ****
+"********************************
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+xmap ga <Plug>(EasyAlign)
+
+
