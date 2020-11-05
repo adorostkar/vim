@@ -30,6 +30,11 @@ Plug 'vimwiki/vimwiki'
 call plug#end()
 
 "********************************
+"****         C O C          ****
+"********************************
+let g:coc_global_extensions = [ 'coc-json', 'coc-git', 'coc-clangd' ]
+
+"********************************
 "****    S T A R T I F Y     ****
 "********************************
 let g:startify_bookmarks = [ {'b': '~/.bashrc.user'}, {'v': '~/.vim/vimrc'}, {'t': '~/.tmux.conf'} ]
