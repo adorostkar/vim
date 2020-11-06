@@ -25,7 +25,6 @@ Plug 'tpope/vim-vinegar'
 Plug 'vim-scripts/a.vim'
 Plug 'majutsushi/tagbar'
 Plug 'junegunn/vim-easy-align'
-Plug 'vimwiki/vimwiki'
 " Initialize plugin system
 call plug#end()
 
@@ -71,12 +70,6 @@ if executable('rg')
 endif
 
 "********************************
-"****    V I M    W I K I    ****
-"********************************
-let g:vimwiki_list = [{'path': '~/vimwiki/',
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
-
-"********************************
 "****         F Z F          ****
 "********************************
 noremap <Left> :Bu<CR>
@@ -88,6 +81,6 @@ noremap <Right> :FZF -i<CR>
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
-xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 
 

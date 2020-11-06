@@ -62,7 +62,11 @@ set secure
 set t_Co=256
 
 " Change mapleader to <space> instead of \
-let mapleader=" "
+" This is a bad idea because it interferes with
+" insert mode key mappings. For instance <leader>ihn
+" from a.vim will cause jumpback into normal mode as
+" you type
+" let mapleader=" "
 
 
 "********************************
