@@ -3,7 +3,6 @@ call plug#begin('~/.vim/bundle')
 " Initialize plugin system
 Plug 'ciaranm/securemodelines'
 Plug 'dhruvasagar/vim-table-mode' " Table creation plugin
-Plug 'honza/vim-snippets'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-update-rc' }
 Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-startify'
@@ -12,7 +11,8 @@ Plug 'morhetz/gruvbox' " Color scheme for c++
 Plug 'nelstrom/vim-visual-star-search'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'octol/vim-cpp-enhanced-highlight' " Color scheme for c++
+" Plug 'octol/vim-cpp-enhanced-highlight' " Color scheme for c++
+Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'sk1418/QFGrep'
 Plug 'skywind3000/asyncrun.vim'
@@ -22,12 +22,14 @@ Plug 'tpope/vim-dispatch' " Make
 Plug 'tpope/vim-fugitive' " Git plugin
 Plug 'tpope/vim-surround' " Surround plugin
 Plug 'tpope/vim-vinegar'
+Plug 'preservim/nerdtree'
 Plug 'vim-scripts/a.vim'
 Plug 'majutsushi/tagbar'
 Plug 'junegunn/vim-easy-align'
 " Initialize plugin system
 call plug#end()
 
+let g:NERDTreeHijackNetrw=0
 "********************************
 "****         C O C          ****
 "********************************
