@@ -38,7 +38,7 @@ let g:coc_global_extensions = [ 'coc-json', 'coc-git', 'coc-clangd' ]
 "********************************
 "****    S T A R T I F Y     ****
 "********************************
-let g:startify_bookmarks = [ {'b': '~/.bashrc.user'}, {'v': '~/.vim/vimrc'}, {'t': '~/.tmux.conf'} ]
+let g:startify_bookmarks = [ {'b': '~/.bashrc.user'}, {'v': '~/.vim/vimrc'}, {'t': '~/.tmux.conf'}, {'w': '~/vimwiki'} ]
 
 let g:startify_lists = [
             \ { 'type': 'files',     'header': ['   MRU']            },
