@@ -33,7 +33,7 @@ let g:NERDTreeHijackNetrw=0
 "********************************
 "****         C O C          ****
 "********************************
-let g:coc_global_extensions = [ 'coc-json', 'coc-git', 'coc-clangd' ]
+let g:coc_global_extensions = [ 'coc-cmake', 'coc-rls', 'coc-json', 'coc-git', 'coc-clangd' ]
 
 "********************************
 "****    S T A R T I F Y     ****
