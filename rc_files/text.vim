@@ -1,6 +1,8 @@
 "********************************
 "****        T E X T         ****
 "********************************
+" Allow backspace over everything in insert mode
+set backspace=indent,eol,start
 
 " set the text width
 setlocal tw=80
