@@ -13,13 +13,14 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'NLKNguyen/papercolor-theme'
 " Plug 'octol/vim-cpp-enhanced-highlight' " Color scheme for c++
 Plug 'jackguo380/vim-lsp-cxx-highlight'
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'sk1418/QFGrep'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'tomtom/tcomment_vim' " C++ and other language comments
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-dispatch' " Make
 Plug 'tpope/vim-fugitive' " Git plugin
+Plug 'rbong/vim-flog'
 Plug 'tpope/vim-surround' " Surround plugin
 Plug 'tpope/vim-vinegar'
 Plug 'preservim/nerdtree'
